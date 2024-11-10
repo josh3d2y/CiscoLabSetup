@@ -1,0 +1,652 @@
+
+R3>
+R3>en
+R3#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R3(config)#hostname R1
+R1(config)#exit
+R1#wr
+*Nov 10 04:04:18.483: %SYS-5-CONFIG_I: Configured from console by consoleite
+Building configuration...
+[OK]
+R1#wri?
+write
+
+R1#wri
+R1#write me?
+memory
+
+R1#write me
+R1#write memory
+Building configuration...
+[OK]
+R1#int?
+% Unrecognized command
+R1#int
+Translating "int"...domain server (255.255.255.255)
+
+% Bad IP address or host name
+Translating "int"...domain server (255.255.255.255)
+ (255.255.255.255)
+Translating "int"...domain server (255.255.255.255)
+
+% Unknown command or computer name, or unable to find computer address
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int?
+interface
+
+R1(config)#int
+R1(config)#interface g?
+Group-Async
+
+R1(config)#interface gi?
+% Unrecognized command
+R1(config)#interface f?
+FastEthernet
+
+R1(config)#interface f
+R1(config)#interface fastEthernet ?
+  <0-0>  FastEthernet interface number
+
+R1(config)#interface fastEthernet 0?
+/
+
+R1(config)#interface fastEthernet 0/?
+  <0-1>  FastEthernet interface number
+
+R1(config)#interface fastEthernet 0/1
+R1(config-if)#ip add?
+address
+
+R1(config-if)#ip add
+R1(config-if)#ip address 192.168.10.1 255.255.255.0
+R1(config-if)#no s
+R1(config-if)#no s?
+service-policy  shutdown  snapshot  snmp
+source          speed     standby
+
+R1(config-if)#no shut
+R1(config-if)#no shutdown
+R1(config-if)#exit
+R1(config)#write mem
+             ^
+% Invalid input detected at '^' marker.
+
+R1(config)#
+R1(config)#wr
+R1(config)#
+R1#
+*Nov 10 04:08:42.023: %SYS-5-CONFIG_I: Configured from console by console
+R1#en
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#write
+R1(config)#write m?
+% Unrecognized command
+R1(config)#int?
+interface
+
+R1(config)#int
+R1(config)#interface f?
+FastEthernet
+
+R1(config)#interface f
+R1(config)#interface fastEthernet 0/1
+R1(config-if)#wr?
+% Unrecognized command
+R1(config-if)#cop?
+% Unrecognized command
+R1(config-if)#exit
+R1(config)#copy?
+% Unrecognized command
+R1(config)#copy
+R1#
+*Nov 10 04:09:29.043: %SYS-5-CONFIG_I: Configured from console by console
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#write?
+% Unrecognized command
+R1(config)#?
+Configure commands:
+  aaa                         Authentication, Authorization and Accounting.
+  access-list                 Add an access list entry
+  alias                       Create command alias
+  appfw                       Configure the Application Firewall policy
+  archive                     Archive the configuration
+  arp                         Set a static ARP entry
+  async-bootp                 Modify system bootp parameters
+  autoupgrade                 Auto Upgrade Manager simplifies image upgrade
+                              process
+  backhaul-session-manager    Configure Backhaul Session Manager
+  banner                      Define a login banner
+  bba-group                   Configure BBA Group
+  beep                        Configure BEEP (Blocks Extensible Exchange
+                              Protocol)
+  bfd                         BFD configuration commands
+  boot                        Modify system boot parameters
+  bridge                      Bridge Group.
+  buffers                     Adjust system buffer pool parameters
+  busy-message                Display message when connection to host fails
+  call                        Configure Call parameters
+  call-history-mib            Define call history mib parameters
+  call-home                   Enter call-home configuration mode
+  cdp                         Global CDP configuration subcommands
+  cef                         Cisco Express Forwarding
+  chat-script                 Define a modem chat script
+  class-map                   Configure Class Map
+  clns                        Global CLNS configuration subcommands
+  clock                       Configure time-of-day clock
+  cns                         CNS agents
+  config-register             Define the configuration register
+  configuration               Configuration access
+  connect                     cross-connect two interfaces
+  control-plane               Configure control plane services
+  controller                  Configure a specific controller
+  crypto                      Encryption module
+  cwmp                        Configure CPE WAN Management Protocol(CWMP)
+  default                     Set a command to its defaults
+  default-value               Default character-bits values
+  define                      interface range macro definition
+  dialer                      Dialer commands
+  dialer-list                 Create a dialer list entry
+  disable-eadi                Disable EADI
+  dnsix-dmdp                  Provide DMDP service for DNSIX
+  dnsix-nat                   Provide DNSIX service for audit trails
+  do                          To run exec commands in config mode
+  dot11                       IEEE 802.11 config commands
+  dot1x                       IEEE 802.1X Global Configuration Commands
+  downward-compatible-config  Generate a configuration compatible with older
+                              software
+  emm                         Specify pre-loading of MDF
+  enable                      Modify enable password parameters
+  end                         Exit from configure mode
+  eou                         EAPoUDP Global Configuration Commands
+  errdisable                  Error disable
+  ethernet                    Ethernet configuration
+  event                       Event related configuration commands
+  exception                   Exception handling
+  exit                        Exit from configure mode
+  file                        Adjust file system parameters
+  flow                        Global Flow configuration subcommands
+  flow-sampler-map            Flow sampler configuration
+  format                      Format the output
+  fpm                         fpm configuration:
+  frame-relay                 global frame relay configuration commands
+  global-address-family       Enter address-family base routing topology mode
+  help                        Description of the interactive help system
+  hostname                    Set system's network name
+  ida-client                  IDA Client provides infra for communication with
+                              IDA on cisco server
+  identity                    Identity Configuration Commands
+  interface                   Select an interface to configure
+  ip                          Global IP configuration subcommands
+  ipc                         Configure IPC system
+  iphc-profile                Configure IPHC profile
+  isdn                        ISDN configuration commands
+  isdn-mib                    Specify isdn mib parameters
+  isis                        Global ISIS configuration subcommands
+  iua                         Configure ISDN user Adaptation Layer
+  ixi                         IXI Config command
+  kerberos                    Configure Kerberos
+  key                         Key management
+  kron                        Kron interval Facility
+  l2tp                        Layer 2 Tunneling Protocol (L2TP) parameters
+  l2tp-class                  l2tp-class configuration
+  li-view                     LI View
+  license                     Configure license features
+  line                        Configure a terminal line
+  load                        Load Protocol
+  logging                     Modify message logging facilities
+  login                       Enable secure login checking
+  login-string                Define a host-specific login string
+  mac-address-table           Configure the MAC address table
+  macro                       Create a command macro
+  map-class                   Configure static map class
+  map-list                    Configure static map list
+  memory                      Configure memory management
+  memory-size                 Adjust memory size by percentage
+  menu                        Define a user-interface menu
+  microcode                   configure microcode
+  modemcap                    Modem Capabilities database
+  monitor                     Monitoring different system events
+  mop                         Configure the DEC MOP Server
+  multilink                   PPP multilink global configuration
+  netbios                     NETBIOS access control filtering
+  netconf                     Configure NETCONF
+  no                          Negate a command or set its defaults
+  ntp                         Configure NTP
+  object-group                Configure ACL Object Group
+  oer                         Optimized Exit Routing configuration submodes
+  oer-map                     Create pfr-map and enter pfr-map command mode
+  parameter-map               parameter map
+  parser                      Configure parser
+  password                    Configure encryption password (key)
+  pfr                         Performance Routing configuration submodes
+  pfr-map                     Create pfr-map and enter pfr-map command mode
+  policy-manager              Policy Manager configuration commands
+  policy-map                  Configure Policy Map
+  ppp                         PPP global configuration
+  printer                     Define an LPD printer
+  privilege                   Command privilege parameters
+  process                     Configure process
+  process-max-time            Maximum time for process to run before
+                              voluntarily relinquishing processor
+  prompt                      Set system's prompt
+  rbe                         Commands for Routing RFC 1483 Ethernet
+                              encapsulated packets
+  redundancy                  Enter redundancy mode
+  regexp                      regexp commands
+  resource                    Configure Embedded Resource Manager (ERM)
+  resume-string               Define a host-specific resume string
+  rif                         Source-route RIF cache
+  rlogin                      Rlogin configuration commands
+  rmon                        Remote Monitoring
+  route-map                   Create route-map or enter route-map command mode
+  router                      Enable a routing process
+  sampler                     Define a Sampler
+  sasl                        Configure SASL
+  scheduler                   Scheduler parameters
+  scripting                   Configure options for scripting languages
+  secure                      Secure image and configuration archival commands
+  security                    Infra Security CLIs
+  service                     Modify use of network based services
+  service-family              Configure extenal service-family clients
+  sgbp                        SGBP Stack Group Bidding Protocol configuration
+  shell                       Configure shell command
+  shutdown                    Shutdown system elements
+  signaling-class             Configure signaling class
+  snap                        SNAP configuration
+  snmp                        Modify non engine SNMP parameters
+  snmp-server                 Modify SNMP engine parameters
+  sntp                        Configure SNTP
+  source-bridge               Source-route bridging ring groups
+  spanning-tree               Spanning Tree Subsystem
+  stackmaker                  Specify stack name and add its member
+  stacks                      Configure stacks
+  standby                     Global HSRP configuration commands
+  state-machine               Define a TCP dispatch state machine
+  subscriber                  Subscriber configuration
+  subscriber-policy           Subscriber policy
+  table-map                   Configure Table Map
+  tacacs-server               Modify TACACS query parameters
+  tarp                        Global TARP configuration subcommands
+  template                    Select a template to configure
+  terminal-queue              Terminal queue commands
+  tftp-server                 Provide TFTP service for netload requests
+  tidp                        Configure TIDP services
+  time-range                  Define time range entries
+  track                       Object tracking configuration commands
+  translate                   Translate global configuration commands
+  user-group                  User Group Configuration Commands
+  username                    Establish User Name Authentication
+  vc-group                    Define a Frame Relay VC group
+  virtual-profile             Virtual Profile configuration
+  virtual-template            Virtual Template configuration
+  vlan                        VLAN commands
+  vpdn                        Virtual Private Dialup Network
+  vpdn-group                  VPDN group configuration
+  vpdn-template               vpdn-template configuration
+  vrf                         VRF commands
+  vstack                      Configure vstack parameters
+  vtp                         Configure global VTP state
+  vty-async                   Enable virtual async line configuration
+  warm-reboot                 Warm reboot allows quick reload in case of a
+                              crash or by request
+  webvpn                      SSL VPN Commands
+  wrr-queue                   Configure weighted round-robin xmt queues
+  wsma                        Configure Web Services Management Agents
+  x25                         X.25 Level 3
+  x29                         X29 commands
+  xot                         Global XOT commands
+  zone                        FW with zoning
+  zone-pair                   Zone pair command
+
+R1(config)#
+R1(config)#
+R1(config)#
+R1#
+*Nov 10 04:11:34.563: %SYS-5-CONFIG_I: Configured from console by console
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#hostname SW1
+SW1(config)#exit
+SW1#
+*Mar  1 00:11:23.486: %SYS-5-CONFIG_I: Configured from console by consoleint?
+% Unrecognized command
+SW1#int
+Translating "int"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+SW1#int?
+% Unrecognized command
+SW1#intconf t
+     ^
+% Invalid input detected at '^' marker.
+
+SW1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW1(config)#int?
+interface
+
+SW1(config)#int
+SW1(config)#interface ?
+  Async              Async interface
+  Auto-Template      Auto-Template interface
+  BVI                Bridge-Group Virtual Interface
+  CTunnel            CTunnel interface
+  Dialer             Dialer interface
+  FastEthernet       FastEthernet IEEE 802.3
+  Filter             Filter interface
+  Filtergroup        Filter Group interface
+  GigabitEthernet    GigabitEthernet IEEE 802.3z
+  Group-Async        Async Group interface
+  GroupVI            Group Virtual interface
+  Lex                Lex interface
+  Loopback           Loopback interface
+  Null               Null interface
+  Port-channel       Ethernet Channel of interfaces
+  Portgroup          Portgroup interface
+  Pos-channel        POS Channel of interfaces
+  Tunnel             Tunnel interface
+  Vif                PGM Multicast Host interface
+  Virtual-Template   Virtual Template interface
+  Virtual-TokenRing  Virtual TokenRing
+  Vlan               Catalyst Vlans
+  fcpa               Fiber Channel
+  range              interface range command
+
+SW1(config)#interface v?
+Vif  Virtual-Template  Virtual-TokenRing  Vlan
+
+SW1(config)#interface vla
+SW1(config)#interface vlan 1
+SW1(config-if)#ip address 192.168.10.2 255.255.255.0
+SW1(config-if)#no shu
+SW1(config-if)#no shutdown
+SW1(config-if)#exit
+SW1(config)#vlan 10
+SW1(config-vlan)#name Sales
+SW1(config-vlan)#exit
+SW1(config)#vlan 20
+SW1(config-vlan)#name IT
+SW1(config-vlan)#exit
+SW1(config)#itn
+SW1(config)#int
+SW1(config)#interface f
+SW1(config)#interface f?
+FastEthernet  Filter  Filtergroup  fcpa
+
+SW1(config)#interface fa
+SW1(config)#interface fastEthernet 0/1
+SW1(config-if)#swit
+SW1(config-if)#switchport acc
+SW1(config-if)#switchport mod
+SW1(config-if)#switchport mode acc
+SW1(config-if)#switchport mode access
+SW1(config-if)#sw
+SW1(config-if)#switchport acc
+SW1(config-if)#switchport access vlan 10
+SW1(config-if)#exit
+SW1(config)#interface fastEthernet 0/2
+SW1(config-if)#switchport mode access
+SW1(config-if)#switchport access vlan 20
+SW1(config-if)#exit
+SW1(config)#copy run?
+% Unrecognized command
+SW1(config)#copy ?
+% Unrecognized command
+SW1(config)#
+SW1#co
+*Mar  1 00:16:03.465: %SYS-5-CONFIG_I: Configured from console by consolepy r
+% Incomplete command.
+
+SW1#copy ?
+  /erase          Erase destination file system.
+  /error          Allow to copy error file.
+  /noverify       Don't verify image signature before reload.
+  /verify         Verify image signature before reload.
+  bs:             Copy from bs: file system
+  cns:            Copy from cns: file system
+  flash:          Copy from flash: file system
+  ftp:            Copy from ftp: file system
+  http:           Copy from http: file system
+  https:          Copy from https: file system
+  logging         Copy logging messages
+  null:           Copy from null: file system
+  nvram:          Copy from nvram: file system
+  rcp:            Copy from rcp: file system
+  running-config  Copy from current system configuration
+  scp:            Copy from scp: file system
+  startup-config  Copy from startup configuration
+  system:         Copy from system: file system
+  tar:            Copy from tar: file system
+  tftp:           Copy from tftp: file system
+  tmpsys:         Copy from tmpsys: file system
+  xmodem:         Copy from xmodem: file system
+  ymodem:         Copy from ymodem: file system
+
+SW1#copy running?
+running-config
+
+SW1#copy running
+SW1#copy running-config st?
+startup-config
+
+SW1#copy running-config st
+SW1#copy running-config startup-config
+Destination filename [startup-config]?
+Building configuration...
+[OK]
+SW1#
+R1#ip routing
+      ^
+% Invalid input detected at '^' marker.
+
+R1#en
+R1#ip ro?
+% Unrecognized command
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#ip ro?
+route  routing
+
+R1(config)#ip route 192.168.20.0 255.255.255.0 f?
+FastEthernet
+
+R1(config)#ip route 192.168.20.0 255.255.255.0 f
+R1(config)#ip route 192.168.20.0 255.255.255.0 fastEthernet 0/1
+R1(config)#pinng
+R1#ping
+*Nov 10 04:20:02.247: %SYS-5-CONFIG_I: Configured from console by console?
+ping
+
+R1#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R1#show ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES NVRAM  administratively down down
+FastEthernet0/1            192.168.10.1    YES manual up                    down
+Serial0/0/0:0              10.10.10.3      YES NVRAM  down                  down
+R1#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int
+R1(config)#interface f
+R1(config)#interface fastEthernet 0/0
+R1(config-if)#no shu
+R1(config-if)#
+*Nov 10 04:22:52.515: %LINK-3-UPDOWN: Interface FastEthernet0/0, changed state to up
+*Nov 10 04:22:53.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to upe
+% Ambiguous command:  "e"
+R1(config-if)#end
+R1#
+*Nov 10 04:23:02.999: %SYS-5-CONFIG_I: Configured from console by consoleconf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#show ip int br
+             ^
+% Invalid input detected at '^' marker.
+
+R1(config)#
+R1#
+*Nov 10 04:23:28.079: %SYS-5-CONFIG_I: Configured from console by consoles
+% Type "show ?" for a list of subcommands
+R1#show ip int br
+Interface                  IP-Address      OK? Method Status                Protocol
+FastEthernet0/0            unassigned      YES NVRAM  up                    up
+FastEthernet0/1            192.168.10.1    YES manual up                    down
+Serial0/0/0:0              10.10.10.3      YES NVRAM  down                  down
+R1#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+.....
+Success rate is 0 percent (0/5)
+R1#show vlan br
+% Ambiguous command:  "show vlan br"
+R1#show vlan bri
+% Ambiguous command:  "show vlan bri"
+R1#show vlan bre
+               ^
+% Invalid input detected at '^' marker.
+
+R1#show vlan brief
+% Ambiguous command:  "show vlan brief"
+R1#
+SW1#show ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  192.168.10.2    YES manual up                    down
+FastEthernet0/1        unassigned      YES unset  up                    up
+FastEthernet0/2        unassigned      YES unset  down                  down
+FastEthernet0/3        unassigned      YES unset  down                  down
+FastEthernet0/4        unassigned      YES unset  down                  down
+FastEthernet0/5        unassigned      YES unset  down                  down
+FastEthernet0/6        unassigned      YES unset  down                  down
+FastEthernet0/7        unassigned      YES unset  down                  down
+FastEthernet0/8        unassigned      YES unset  down                  down
+FastEthernet0/9        unassigned      YES unset  down                  down
+FastEthernet0/10       unassigned      YES unset  down                  down
+FastEthernet0/11       unassigned      YES unset  down                  down
+FastEthernet0/12       unassigned      YES unset  down                  down
+FastEthernet0/13       unassigned      YES unset  down                  down
+FastEthernet0/14       unassigned      YES unset  down                  down
+FastEthernet0/15       unassigned      YES unset  down                  down
+FastEthernet0/16       unassigned      YES unset  down                  down
+FastEthernet0/17       unassigned      YES unset  down                  down
+FastEthernet0/18       unassigned      YES unset  down                  down
+FastEthernet0/19       unassigned      YES unset  down                  down
+FastEthernet0/20       unassigned      YES unset  down                  down
+FastEthernet0/21       unassigned      YES unset  down                  down
+FastEthernet0/22       unassigned      YES unset  down                  down
+FastEthernet0/23       unassigned      YES unset  down                  down
+FastEthernet0/24       unassigned      YES unset  down                  down
+GigabitEthernet0/1     unassigned      YES unset  down                  down
+GigabitEthernet0/2     unassigned      YES unset  down                  down
+SW1#
+SW1#show vlan br
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/3, Fa0/4, Fa0/5, Fa0/6
+                                                Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15, Fa0/16, Fa0/17, Fa0/18
+                                                Fa0/19, Fa0/20, Fa0/21, Fa0/22
+                                                Fa0/23, Fa0/24, Gi0/1, Gi0/2
+10   Sales                            active    Fa0/1
+20   IT                               active    Fa0/2
+30   JILL                             active
+40   SUSIE                            active
+1002 fddi-default                     act/unsup
+1003 token-ring-default               act/unsup
+1004 fddinet-default                  act/unsup
+1005 trnet-default                    act/unsup
+SW1#int?
+% Unrecognized command
+SW1#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW1(config)#int?
+interface
+
+SW1(config)#int
+SW1(config)#interface fas
+SW1(config)#interface fastEthernet 0/1
+SW1(config-if)#sw
+SW1(config-if)#switchport mo
+SW1(config-if)#switchport mode acc
+SW1(config-if)#switchport mode access
+SW1(config-if)#sw
+SW1(config-if)#switchport acc
+SW1(config-if)#switchport access vlan 1
+SW1(config-if)#no shut
+SW1(config-if)#no shutdown
+SW1(config-if)#exit
+SW1(config)#
+SW1#s
+*Mar  1 00:29:58.383: %SYS-5-CONFIG_I: Configured from console by consoleh
+% Type "show ?" for a list of subcommands
+SW1#sh ip int br
+Interface              IP-Address      OK? Method Status                Protocol
+Vlan1                  192.168.10.2    YES manual up                    down
+FastEthernet0/1        unassigned      YES unset  up                    up
+FastEthernet0/2        unassigned      YES unset  down                  down
+FastEthernet0/3        unassigned      YES unset  down                  down
+FastEthernet0/4        unassigned      YES unset  down                  down
+FastEthernet0/5        unassigned      YES unset  down                  down
+FastEthernet0/6        unassigned      YES unset  down                  down
+FastEthernet0/7        unassigned      YES unset  down                  down
+FastEthernet0/8        unassigned      YES unset  down                  down
+FastEthernet0/9        unassigned      YES unset  down                  down
+FastEthernet0/10       unassigned      YES unset  down                  down
+FastEthernet0/11       unassigned      YES unset  down                  down
+FastEthernet0/12       unassigned      YES unset  down                  down
+FastEthernet0/13       unassigned      YES unset  down                  down
+FastEthernet0/14       unassigned      YES unset  down                  down
+FastEthernet0/15       unassigned      YES unset  down                  down
+FastEthernet0/16       unassigned      YES unset  down                  down
+FastEthernet0/17       unassigned      YES unset  down                  down
+FastEthernet0/18       unassigned      YES unset  down                  down
+FastEthernet0/19       unassigned      YES unset  down                  down
+FastEthernet0/20       unassigned      YES unset  down                  down
+FastEthernet0/21       unassigned      YES unset  down                  down
+
+SW1#ing 1
+*Mar  1 00:30:11.712: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to u
+Translating "ing"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+SW1#
+SW1#
+SW1#
+SW1#
+SW1#
+SW1#
+SW1#
+SW1#
+SW1#ping 192.168.10.2
+Type escape sequence to abort.
+Sending 5, 100-byte ICMP Echos to 192.168.10.2, timeout is 2 seconds:
+!!!!!
+Success rate is 100 percent (5/5), round-trip min/avg/max = 1/1/1 ms
+SW1#er configuration commands, one per line.  End with CNTL/Z.conf t
+
+% In
